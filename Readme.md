@@ -16,13 +16,15 @@ Exports a flat json object keyed by pokemon name that has this shape:
 
 One would use this in an es6 app like so:
 
-first install it with npm or yarn:
+ - install it with npm or yarn:
 
-`yarn add pokemon-metadata`
-
-Then get the metadata!
-
+```sh
+yarn add pokemon-metadata
 ```
+
+ - get the metadata!
+
+```js
 import pokemonMetadata from 'pokemon-metadata';
 
 const squirtle = pokemonMetadata.squirtle;
