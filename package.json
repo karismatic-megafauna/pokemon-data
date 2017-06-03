@@ -1,17 +1,19 @@
 {
-  "name": "y",
+  "name": "pokemon-data",
   "version": "1.0.0",
-  "description": "get dat data",
+  "description": "get dat pokemon data",
   "main": "pokeScraper.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/michaelghinrichs/pokemon-data.git"
+  },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "async": "^2.4.1",
     "limiter": "^1.1.0",
-    "node-fetch": "^1.7.0",
-    "node-rate-limiter": "^0.1.1"
+    "node-fetch": "^1.7.0"
   }
 }
