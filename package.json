@@ -2,9 +2,10 @@
   "name": "pokemon-data",
   "version": "1.0.0",
   "description": "get dat pokemon data",
-  "main": "pokeScraper.js",
+  "main": "data.json",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "getPokemon": "node pokeScraper.js"
   },
   "repository": {
     "type": "git",
@@ -12,7 +13,7 @@
   },
   "author": "",
   "license": "ISC",
-  "dependencies": {
+  "devDependencies": {
     "limiter": "^1.1.0",
     "node-fetch": "^1.7.0"
   }
