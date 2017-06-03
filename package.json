@@ -1,6 +1,6 @@
 {
   "name": "pokemon-metadata",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "get dat pokemon data",
   "main": "data.json",
   "scripts": {
@@ -11,7 +11,7 @@
     "type": "git",
     "url": "git+https://github.com/michaelghinrichs/pokemon-data.git"
   },
-  "author": "",
+  "author": "michaelghinrichs",
   "license": "ISC",
   "devDependencies": {
     "limiter": "^1.1.0",
