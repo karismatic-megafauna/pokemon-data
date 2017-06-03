@@ -25,7 +25,11 @@ for(var i = 1; i <= 151; i++) {
 }
 
 Promise.all(promiseArray).then(value => {
-  let formattedValue = JSON.stringify(value, null, 2);
+  let pokeMap = {}
+  value.map(pokemon => {
+    pokeMap[pokemon.name] = Object.assign({}, pokemon);
+  });
+  let formattedValue = JSON.stringify(pokeMap, null, 2);
   fs.writeFile('data.json', formattedValue, (err) => {
     if (err) throw err;
     console.log('Complete');
@@ -35,17 +39,14 @@ Promise.all(promiseArray).then(value => {
 });
 
 const formatResponse = (data) => {
-  let newObj = {
-    [data.name] : {
-      id: data.id,
-      height: data.height,
-      weight: data.weight,
-      sprites: data.sprites,
-      stats: data.stats,
-      base_experience: data.base_experience,
-      types: data.types,
-    },
+  return {
+    name: data.name,
+    id: data.id,
+    height: data.height,
+    weight: data.weight,
+    sprites: data.sprites,
+    stats: data.stats,
+    base_experience: data.base_experience,
+    types: data.types,
   }
-
-  return newObj;
 }
