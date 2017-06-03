@@ -1,6 +1,6 @@
 Exports a flat json object keyed by pokemon name that has this shape:
 
-```json
+```js
 {
   squirtle: {
     name: "squirtle",
